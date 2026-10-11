@@ -14,7 +14,24 @@ App nativa para macOS que reúne toda la información de tu Mac que importa para
 
 <img src="docs/imagen-anuncio.png" width="360" alt="Imagen exportada para el anuncio">
 
-## Compilar
+## Descargar
+
+**[⬇️ Descargar WallaMac.zip](https://github.com/danielperis/wallamac/releases/latest/download/WallaMac.zip)** · macOS 14 o posterior · Apple Silicon e Intel
+
+1. Descomprime el zip y arrastra **WallaMac** a la carpeta Aplicaciones.
+2. La primera vez, macOS te avisará de que no puede verificar al desarrollador (la app no está notarizada por Apple). Para abrirla:
+   - Haz doble clic en WallaMac y cierra el aviso.
+   - Ve a **Ajustes del Sistema › Privacidad y seguridad**, baja hasta el mensaje sobre WallaMac y pulsa **Abrir igualmente**.
+   - Confirma con tu contraseña o Touch ID. A partir de ahí se abre con normalidad.
+
+   Si lo prefieres, desde Terminal:
+
+   ```bash
+   xattr -dr com.apple.quarantine /Applications/WallaMac.app
+   ```
+
+## Compilar desde el código
+
 
 Necesita macOS 14 o posterior y las Command Line Tools de Xcode (`xcode-select --install`).
 
